@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/task12.css" />
+    <title>Document</title>
+  </head>
+  <body class="position-relative">
+    <img id="myVideo" class="position-absolute" alt="" />
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top text-white">
+      <div class="container">
+        <div class="info d-flex">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://routeweather.netlify.app/images/logo@2x.png"
+              alt=""
+              class="logo"
+              width="64"
+              height="38"
+          /></a>
+          <div class="info-text">
+            <h1 class="m-0 h6">Weather</h1>
+            <small class="site-description w-100">tagline goes here</small>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto gap-2 mt-4 mt-lg-0">
+            <a class="nav-link active mx-3" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link mx-3" href="#">News</a>
+            <a class="nav-link mx-3" href="#">Live cameras</a>
+            <a class="nav-link mx-3" href="#">Photos</a>
+            <a class="nav-link mx-3" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <section class="pt-5" id="weather">
+      <div class="container py-5">
+        <div class="input-group mb-3 position-relative">
+          <input
+            id="search"
+            type="text"
+            class="form-control rounded rounded-pill p-3"
+            placeholder="Find your location..."
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+          />
+          <button
+            id="find"
+            type="button"
+            class="btn btn-primary rounded rounded-pill position-absolute py-2 px-4"
+          >
+            Find
+          </button>
+        </div>
+
+        <div id="row" class="row text-center pt-4 g-3">
+          <div
+            id="spenner"
+            class="d-flex justify-content-center align-items-center"
+          >
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="alert alert-danger text-center d-none" id="Eror"></div>
+
+    <section id="contact">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="input-group mb-3 position-relative">
+              <input
+                id="subInput"
+                type="text"
+                class="form-control rounded rounded-pill p-3"
+                placeholder="Enter your Email to Subscribe..."
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <button
+                id="find"
+                type="button"
+                class="btn btn-primary rounded rounded-pill position-absolute py-2 px-4"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="icons d-flex justify-content-center align-items-center"
+              id="socialIcons"
+            >
+              <div class="sIcon">
+                <i class="fab fa-facebook-f mx-3 fa-lg"></i>
+              </div>
+              <div class="sIcon"><i class="fab fa-twitter mx-3 fa-lg"></i></div>
+              <div class="sIcon">
+                <i class="fab fa-google-plus-g mx-3 fa-lg"></i>
+              </div>
+              <div class="sIcon">
+                <i class="fab fa-pinterest mx-3 fa-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
