@@ -10,12 +10,13 @@ async function getData(par) {
   );
   var data = await http.json();
   array = data;
+  console.log(array);
   display();
 }
 getData("cairo");
 async function display() {
   if (array.current.condition.text.toLocaleLowerCase() == "clear") {
-    myVideo.setAttribute("image/clear-day.jpg");
+    myVideo.setAttribute("src", "image/clear-day.jpg");
   } else if (array.current.condition.text.toLocaleLowerCase() == "sunny") {
     myVideo.setAttribute("src", "image/Sunny-day.jpg");
   } else if (
